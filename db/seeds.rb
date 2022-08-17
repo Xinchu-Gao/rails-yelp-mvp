@@ -12,10 +12,10 @@ puts "Creating restaurants..."
 
 6.times do
   restaurant = Restaurant.create({
-    name: Faker::Restaurant.name,
+    name:Faker::Restaurant.name,
     address: Faker::Address.street_address,
     category: "french",
-    phone_number: Faker::Number.number(digits: 10)
+    phone_number:Faker::Number.number(digits: 10)
   })
   puts "Created #{restaurant.name}"
 end
